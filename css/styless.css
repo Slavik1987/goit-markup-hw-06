@@ -366,8 +366,9 @@ Hero styless
 }
 @media screen and (min-width: 1158px) {
         .li-strategy {
-                
+
                 width: calc((100% - 72px) / 4);
+                
         }
 }
 .list-strategy
@@ -475,13 +476,17 @@ Hero styless
 }
 @media screen and (min-width: 768px){
       .li-fotopeople{
-        width: calc((100% - 24px) / 2);
+
 
       }
 }
 @media screen and (min-width: 1158px) {
         .li-fotopeople {
+                
+                justify-content: center;
+                align-items: center;
                 width: calc((100% - 72px) / 4);
+               
           
         }
 }
@@ -504,6 +509,25 @@ Hero styless
         padding: 32px 0;
         
 }
+@media screen and (min-width: 768px) {
+        .div-members {
+                justify-content: center;
+                align-items: center;
+
+                
+
+        }
+}
+@media screen and (min-width: 1158px) {
+        .div-members {
+                
+                justify-content: center;
+                align-items: center;
+                
+
+        }
+}
+
 .name:hover,
 .name:focus
 {
@@ -531,7 +555,23 @@ Hero styless
 .section-two 
 {
         background-color: #FFFFFF;
-        padding-bottom: 120px;
+        display: none;
+        
+        
+}
+@media screen and (min-width: 768px) {
+        .section-two {
+                
+        }
+
+}
+
+@media screen and (min-width: 1158px) {
+        .section-two {
+                display: flex;
+                padding-bottom: 120px;
+        }
+
 }
 .footer-incris
 {
@@ -574,6 +614,7 @@ Hero styless
 }
 @media screen and (min-width: 768px) {
         .ul-fotopeople {
+                
                 flex-wrap: wrap;
                 gap: 64px 24px;
                 flex-direction: row;
@@ -585,8 +626,8 @@ Hero styless
 
 @media screen and (min-width: 1158px) {
         .ul-fotopeople {
+             
                 flex-wrap: wrap;
-                gap: 64px 24px;
                 flex-direction: row;
                 
         }
@@ -622,6 +663,7 @@ Hero styless
        
         
 }
+
 @media screen and (min-width: 768px) {
         .section-three{
         padding: 96px 0;
