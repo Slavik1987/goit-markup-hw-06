@@ -320,41 +320,135 @@ Hero styless
 */
 
 .div-second-icons{
-        display: flex;
+        display: none;
+       
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 72px;
+
+}
+@media screen and (min-width: 768px) {
+        .div-second-icons {
+                
+               
+
+        }
+}
+@media screen and (min-width: 1158px) {
+       .div-second-icons {
+        
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
+        width: 264px;
         height: 112px;
         background-color: #f4f4fd;
         border-radius: 4px;
         margin-bottom: 8px;
-
+        
+                
+        }
 }
+
+
 .li-strategy
 {
-        width: calc((100% - 72px) / 4);
+        
+}
+@media screen and (min-width: 768px) {
+        .li-strategy {
+
+                width: calc((100% - 24px) / 2)
+        
+        }
+}
+@media screen and (min-width: 1158px) {
+        .li-strategy {
+                
+                width: calc((100% - 72px) / 4);
+        }
 }
 .list-strategy
 {
         display: flex;
-        gap: 24px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 72px;
 
+        text-align: center;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        
 }
+@media screen and (min-width: 768px) {
+        .list-strategy {
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 72px 24px;
+        
+        }
+}
+@media screen and (min-width: 1158px) {
+        .list-strategy {
+                flex-wrap: wrap;
+                flex-direction: row;
+              
+        }
+}
+
+
 .section-one
 {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 96px;
+        padding-bottom: 96px;
+       
 
+}
+@media screen and (min-width: 768px){
+        .section-one{
+
+        }
+}
+@media screen and (min-width: 1158px){
+        .section-one{
+               
+                padding-top: 120px;
+                padding-bottom: 120px;
+        }
 }
 .message
 {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+       
         color: #434455;
 }
+@media screen and (min-width: 768px) {
+        .message {
+                
+                
+                
+        }
+}
+@media screen and (min-width: 1158px) {
+        .message {
+        font-size: 16px;
+        line-height: 1.5; 
+        letter-spacing: 0.02em; 
+        
+
+        }
+}
+
 .overview
 {
         margin-bottom: 8px;
+        
 }
 .overview,
 .name
@@ -367,17 +461,29 @@ Hero styless
 }
 .li-fotopeople
 {
-       
-        
         
         background-color: #FFFFFF;
+        text-align: center;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 
+        0px 1px 6px rgba(46, 47, 66, 0.08), 
+        0px 1px 1px rgba(46, 47, 66, 0.16), 
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+        
+
        
 }
 @media screen and (min-width: 768px){
       .li-fotopeople{
-
+        width: calc((100% - 24px) / 2);
 
       }
+}
+@media screen and (min-width: 1158px) {
+        .li-fotopeople {
+                width: calc((100% - 72px) / 4);
+          
+        }
 }
 .profession-list
 {
@@ -456,35 +562,39 @@ Hero styless
 
 .ul-fotopeople
 {
-        max-width: 428px;
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 72px;
-        /* display: flex;
+        
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 24px; */
+        align-items: center;
+        flex-direction: column;
+        gap: 72px;
+              
+
 }
 @media screen and (min-width: 768px) {
         .ul-fotopeople {
-                flex-wrap: nowrap;
-                max-width: 768px;
-                flex-basis: calc((100% - 24px) /2);
+                flex-wrap: wrap;
+                gap: 64px 24px;
+                flex-direction: row;
                 
                 
         }
 
 }
-@media screen and (min-width: 1158px){
-        .ul-fotopeopl{
-                max-width: 1158px;
-                justify-content: center;
-                gap: 24px;
+
+@media screen and (min-width: 1158px) {
+        .ul-fotopeople {
+                flex-wrap: wrap;
+                gap: 64px 24px;
+                flex-direction: row;
+                
         }
 
 }
 
 .li-fotopeople{
+        
         box-shadow: 
         0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -508,13 +618,13 @@ Hero styless
 .section-three
 {
         background-color: #F4F4FD;
-        padding: 96px;
+        padding: 96px 0;
        
         
 }
 @media screen and (min-width: 768px) {
         .section-three{
-        padding: 96px;
+        padding: 96px 0;
         }
 
 }
@@ -527,6 +637,8 @@ Hero styless
 
 .fotopeople
 {
+        margin-left: auto;
+        margin-right: auto;
         background-color: #FFFFFF;
 }
 .profession 
@@ -728,7 +840,7 @@ Hero styless
 
  .ul-customers
  {
-        max-width: 428px;
+       
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -738,16 +850,14 @@ Hero styless
  }
   @media screen and (min-width: 768px) {
     .ul-customers{
-        max-width: 768px;
-        gap: 24px;
+        flex-wrap: wrap;
+       
+       
     }
  }
 @media screen and (min-width: 1158px) {
         .ul-customers {
              
-        max-width: 1158px;
-        gap: 24px;
-      
           }
   }
           
@@ -782,21 +892,24 @@ Hero styless
 }
 .li-customers{
         
-        margin-bottom: 70px;
-        flex-basis: calc((100%-16px) /2) ;
+        height: 88px;
+        display: flex;
+        flex-direction: column;
+        flex-basis: calc((100% - 16px) / 2) ;
        
 }
  @media screen and (min-width: 768px) {
 
         .li-customers {
-                flex-basis: calc((100%-24px) /3);
+                flex-basis: calc((100% - 48px) / 3);
+                gap: 72px 24px;
                 }
  }
   @media screen and (min-width: 1158px) {
 
           .li-customers {
                 flex-basis: calc((100% - 120px) / 6);
-                height: 88px;
+                
                         
                         
           }
