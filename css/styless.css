@@ -80,6 +80,7 @@ img
         .container {
                 max-width: 1158px;
                 
+                
         }
 
 }
@@ -170,18 +171,48 @@ img
 }
 .link-list
 {
-       display: flex;
-       align-items: center;
-       transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: none;
+       
+}
+@media screen and (min-width: 768px) {
+        .link-list {
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+@media screen and (min-width: 1158px) {
+        .link-list{
+                
+                flex-wrap: wrap;
+                flex-direction: row;
+        }
 }
 .contacts
 {
-        display: flex;
-        align-items: center;
-        margin-right: 40px;
-        padding: 24px 0;
-        gap: 40px;
+        display: none;
+        
 
+}
+@media screen and (min-width: 768px) {
+        .contacts {
+                display: flex;
+                align-items: center;
+                margin-right: 40px;
+
+                padding: 24px 0;
+                gap: 40px;
+        }
+}
+
+@media screen and (min-width: 1158px) {
+        .contacts {
+                
+                
+        }
 }
 .header-nav
 {
@@ -248,6 +279,7 @@ img
         font-style: normal;
 }
 .header {
+        
         border-bottom: 1px solid #e7e9fc;
         
 }
@@ -621,7 +653,7 @@ Hero styless
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        
         gap: 72px;
         text-align: center;
         
@@ -632,6 +664,7 @@ Hero styless
                 flex-wrap: wrap;
                 flex-direction: row;
                 text-align: start;
+
          
         }
 
@@ -841,12 +874,13 @@ Hero styless
 @media screen and (min-width: 768px) {
         .ul-img-li {
                 
+                width: calc((100% - 24px) / 2);
         }
 
 }
 
 @media screen and (min-width: 1158px) {
-        .ul-img-li.ul-img {
+        .ul-img-li {
                 width: calc((100% - 48px) / 3);
         }
 
@@ -866,6 +900,7 @@ Hero styless
                 flex-wrap: wrap;
                 flex-direction: row;
                 gap: 16px 72px;
+                
                 
         }
 
@@ -1266,8 +1301,6 @@ Hero styless
 @media screen and (min-width: 1158px) {
         .subscribe-form {
         
-                
-                display: inline;
                 width: 1440px;
                 gap: 24px;
         }
@@ -1437,10 +1470,78 @@ Hero styless
         
 }
 
-.subscribe-dive-form{
-        
-        margin-left: auto;
-}
+
 .button-form-imput-use{
         fill: #FFFFFF;
+}
+/* aatata */
+.menu-toggle-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        stroke: rgba(46, 47, 66, 1);
+}
+.menu-toggle {
+        min-height: 40px;
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+}
+
+@media (min-width: 768px) {
+        .menu-toggle {
+                display: none;
+        }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+        background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 32px;
+        background-color: #3f51b5;
+        z-index: 999;
+
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+        transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        color: #fff;
+}
+
+.mobile-menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+}
+
+.mobile-menu .link {
+        display: block;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
 }
