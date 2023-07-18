@@ -57,6 +57,19 @@
             </li>
           </ul>
         </address>
+         <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon"
+            width="32"
+            height="22"
+            
+          >
+           <use href="./images/icons.svg#icon-menu-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -245,13 +258,86 @@
             <label class="subscribe-form-label">
             <input class="subscribe-form-input" type="email" name="subscribe-form" placeholder="E-mail">
             </label>
-            <button class="button button-form" type="submit">Subscribe
+            <button class="button-modal button-form" type="submit">Subscribe
               <svg class="button-form-imput" width="24" height="24">
                 <use class="button-form-imput-use" href="./images/icons.svg#icon-subscribe"></use></svg>
             </button>
           </form>
         </div>
         </div>
+        <!-- mobile-menu -->
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu ">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+         <svg class="modal-form-checkbox-icon-black" width="8" height="8">
+            <use class="modal-form-checkbox-icon-black-icon" href="./images/icons.svg#icon-black"></use>
+              </svg>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li
+        class="mobile-menu-li"><a href="" class="link mobile-menu-modal active">Studio</a></li>
+        <li
+        class="mobile-menu-li"><a href="" class="link mobile-menu-modal">Portfolio</a></li>
+        <li
+        class="mobile-menu-li"><a href="" class="link mobile-menu-modal">Contacts</a></li>
+      </ul>
+      <ul class="list link-list-modal">
+         <li class="list list-tell-modal">
+              <a class="link address-link-tell" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="list list-mailo-modal">
+              <a class="link address-link-mailo" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+      <ul class="list ul-designer-modal">
+                  <li class="ul-li-designer">
+                    <a class="a-designer" href="" aria-label="instagram">
+                      <svg class="svg-designer" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ul-li-designer">
+                    <a class="a-designer" href="" aria-label="twitter">
+                      <svg class="svg-designer" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ul-li-designer">
+                    <a class="a-designer" href="" aria-label="facebook">
+                      <svg class="svg-designer" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ul-li-designer">
+                    <a class="a-designer" href="" aria-label="linkedin">
+                      <svg class="svg-designer" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+    </div>
+
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

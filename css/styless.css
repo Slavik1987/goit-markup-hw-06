@@ -73,12 +73,14 @@ img
 @media screen and (min-width: 768px) {
         .container{
                 max-width: 768px;
+                
         }
         
 }
 @media screen and (min-width: 1158px) {
         .container {
                 max-width: 1158px;
+                padding: 0 ;
                 
                 
         }
@@ -106,7 +108,6 @@ img
         border-radius: 2px;
         width: 100%;
         top: 44px;
-        
         
         
 }
@@ -380,10 +381,7 @@ Hero styless
 }
 @media screen and (min-width: 1158px) {
        .div-second-icons {
-        
-        display: inline-flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        display: flex;
         align-items: center;
         justify-content: center;
         width: 264px;
@@ -427,6 +425,7 @@ Hero styless
         text-align: center;
         line-height: 24px;
         letter-spacing: 0.32px;
+        
         
 }
 @media screen and (min-width: 768px) {
@@ -622,6 +621,7 @@ Hero styless
 }
 .footer-incris
 {
+        
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #F4F4FD;
@@ -660,11 +660,12 @@ Hero styless
 }
 @media screen and (min-width: 768px) {
         .div-footer {
+
                 align-items: baseline;
                 flex-wrap: wrap;
                 flex-direction: row;
                 text-align: start;
-
+                
          
         }
 
@@ -672,7 +673,11 @@ Hero styless
 
 @media screen and (min-width: 1158px) {
         .div-footer {
+                display: flex;
+                flex-wrap: nowrap;
                 
+
+
                 
         }
 
@@ -887,23 +892,15 @@ Hero styless
 }
 .ul-img
 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 48px;
-        
-
+       
 }
 @media screen and (min-width: 768px) {
         .ul-img {
+                display: flex;
                 flex-wrap: wrap;
-                flex-direction: row;
-                gap: 16px 72px;
-                
-                
+                gap: 24px;
+              
         }
-
 }
 
 @media screen and (min-width: 1158px) {
@@ -951,24 +948,42 @@ Hero styless
    
  .button-ul
  {
-        display: flex;
-        justify-content: center;
+      
+        display: flex; 
+        flex-wrap: wrap;
         gap: 24px;
         margin-bottom: 72px;
-        
- 
+       
  }
+@media screen and (min-width: 768px) {
+       .button-ul{
+              justify-content: center;
+       }
+}
+ @media screen and (min-width: 1158px) {
+        .button-ul{
+                flex-wrap: nowrap;
+                
+        }
+
+ }
+@media screen and (max-width: 768px){
+ .portfolio-button-list:not(:last-child){
+        margin-bottom: 16px;
+        
+ }
+}
 
  .main-section
  {
-        padding-top: 96px;
-        padding-bottom: 80px;
+        padding-top: 48px;
+        padding-bottom: 48px;
         /* padding-top: 96px;
         padding-bottom: 120px; */
  }
  @media screen and (min-width: 768px) {
         .main-section {
-        padding-top: 144px;
+        padding-top: 64px;
         padding-bottom: 96px;
 
          }
@@ -977,7 +992,7 @@ Hero styless
 
  @media screen and (min-width: 1158px) {
         .main-section {
-                padding-top: 96px;
+                padding-top: 100px;
                 padding-bottom: 120px; 
          }
  }
@@ -1284,16 +1299,17 @@ Hero styless
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 398px;
+        
         
 }
 @media screen and (min-width: 768px) {
         .subscribe-form {
                 display: flex;
-                width: 768px;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 flex-direction: row;
                 gap: 24px;
+                
+                
         }
 
 }
@@ -1301,7 +1317,6 @@ Hero styless
 @media screen and (min-width: 1158px) {
         .subscribe-form {
         
-                width: 1440px;
                 gap: 24px;
         }
 }
@@ -1454,6 +1469,7 @@ Hero styless
 }
 .button-form-imput-use{
         background: rgba(255, 255, 255, 1);
+        
 }
 .modal-form-input:focus + .modal-form-icon{
         fill: #4D5AE5;
@@ -1473,7 +1489,9 @@ Hero styless
 
 .button-form-imput-use{
         fill: #FFFFFF;
+        
 }
+
 /* aatata */
 .menu-toggle-icon{
         display: flex;
@@ -1482,8 +1500,8 @@ Hero styless
         stroke: rgba(46, 47, 66, 1);
 }
 .menu-toggle {
-        min-height: 40px;
-        min-width: 40px;
+        min-height: 32px;
+        min-width: 22px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1509,13 +1527,15 @@ Hero styless
 }
 
 .menu-container {
+        display: flex;
+        flex-direction: column;
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-        padding: 32px;
-        background-color: #3f51b5;
+        padding: 80px 40px 35pc 40px;
+        background-color: #FFF;
         z-index: 999;
 
         transform: translateX(100%);
@@ -1528,20 +1548,139 @@ Hero styless
 
 .menu-container .menu-toggle {
         position: absolute;
-        top: 16px;
-        right: 16px;
-        color: #fff;
+        top: 24px;
+        right: 24px;
+        color: rgba(46, 47, 66, 1);
 }
 
-.mobile-menu {
-        padding: 0;
-        margin: 0;
-        list-style: none;
+
+.ul-designer-modal{
+        display: flex;
+        justify-content: flex-start;
+        gap: 24px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-top: 10px;
+
+}
+.mobile-menu-modal{
+        color: var(--navyblue, #2E2F42);
+        
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+              
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+
+}
+.mobile-menu-li:not(:last-child){
+        margin-bottom: 40px;
 }
 
-.mobile-menu .link {
-        display: block;
-        padding: 10px;
-        color: #fff;
-        text-decoration: none;
+.mobile-menu{
+        width: fit-content;
+        margin-bottom: auto;
+}
+.address-link-tell{
+        color: var(--iris, #4D5AE5);
+        
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        
+        
+        
+        
+}
+.address-link-mailo{
+        color: var(--slate, #434455);
+        
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+
+}
+.link-list-modal{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+}
+.ul-designer-modal{
+        padding-top: 48px;
+}
+.mobile-menu-modal.active{
+        color: rgba(64, 75, 191, 1);
+}
+.mobile-menu-modal.active::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        background-color: #404bbf;
+        
+}
+.ul-designer-modal{
+        gap: 56px;
+}
+.link-list-modal{
+        padding-top: 284px;
+}
+.button-modal{
+        font-family: Roboto, sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.04em;
+                cursor: pointer;
+                color: #ffffff;
+                background-color: #4D5AE5;
+               
+                display: block;
+                border: none;
+                border-radius: 4px;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                
+
+}
+@media screen and (min-width: 768px) {
+        .button-modal{
+                display: flex;
+                
+        }
+
+}
+
+@media screen and (min-width: 1158px) {
+        .button-modal{
+            
+         
+        
+        }
+}
+
+.div-social{
+
+}
+@media screen and (min-width: 768px) {
+        .div-social {
+                
+
+        }
+
+}
+
+@media screen and (min-width: 1158px) {
+        .div-social {}
 }

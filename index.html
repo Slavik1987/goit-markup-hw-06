@@ -427,7 +427,7 @@
             <label class="subscribe-form-label">
             <input class="subscribe-form-input" type="email" name="subscribe-form" placeholder="E-mail">
             </label>
-            <button class="button button-form" type="submit">Subscribe
+            <button class="button-modal button-form" type="submit">Subscribe
               <svg class="button-form-imput" width="24" height="24">
                 <use class="button-form-imput-use" href="./images/icons.svg#icon-subscribe"></use></svg>
             </button>
@@ -494,7 +494,7 @@
     </div>
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+      <button class="menu-toggle js-close-menu ">
         <svg
           fill="currentColor"
           viewBox="0 0 20 20"
@@ -502,28 +502,29 @@
           width="24"
           height="24"
         >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+         <svg class="modal-form-checkbox-icon-black" width="8" height="8">
+            <use class="modal-form-checkbox-icon-black-icon" href="./images/icons.svg#icon-black"></use>
+              </svg>
         </svg>
       </button>
 
       <ul class="mobile-menu">
-        <li><a href="" class="link">Studio</a></li>
-        <li><a href="" class="link">Portfolio</a></li>
-        <li><a href="" class="link">Contacts</a></li>
+        <li
+        class="mobile-menu-li"><a href="" class="link mobile-menu-modal active">Studio</a></li>
+        <li
+        class="mobile-menu-li"><a href="" class="link mobile-menu-modal">Portfolio</a></li>
+        <li
+        class="mobile-menu-li"><a href="" class="link mobile-menu-modal">Contacts</a></li>
       </ul>
-      <ul class="list link-list">
-            <li class="list list-mailo">
-              <a class="link address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <ul class="list link-list-modal">
+         <li class="list list-tell-modal">
+              <a class="link address-link-tell" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
-            <li class="list list-tell">
-              <a class="link address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <li class="list list-mailo-modal">
+              <a class="link address-link-mailo" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
           </ul>
-      <ul class="list ul-designer">
+      <ul class="list ul-designer-modal">
                   <li class="ul-li-designer">
                     <a class="a-designer" href="" aria-label="instagram">
                       <svg class="svg-designer" width="16" height="16">
