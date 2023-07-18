@@ -492,10 +492,39 @@ Hero styless
 
 .overview
 {
+        color: #2E2F42;
+        
+        text-align: center;
+        
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
         margin-bottom: 8px;
         
+        
 }
-.overview,
+@media screen and (min-width: 768px) {
+        .overview {}
+}
+
+@media screen and (min-width: 1158px) {
+        .overview {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--color1);
+
+
+        }
+}
+
+
 .name
 {
         font-weight: 500;
@@ -633,6 +662,7 @@ Hero styless
 .footer-class{
 
         align-items: baseline;
+       
         
         
        
