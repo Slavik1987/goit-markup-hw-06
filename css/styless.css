@@ -366,7 +366,8 @@ Hero styless
 
 .div-second-icons{
         display: none;
-       
+        
+
         flex-direction: column;
         align-items: flex-start;
         gap: 72px;
@@ -433,6 +434,7 @@ Hero styless
                 flex-wrap: wrap;
                 flex-direction: row;
                 gap: 72px 24px;
+                text-align: center;
         
         }
 }
@@ -466,12 +468,17 @@ Hero styless
 }
 .message
 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-       
         color: #434455;
+        
+               
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        align-self: stretch;
+        letter-spacing: 0.32px;
+        
 }
 @media screen and (min-width: 768px) {
         .message {
@@ -482,9 +489,12 @@ Hero styless
 }
 @media screen and (min-width: 1158px) {
         .message {
-        font-size: 16px;
-        line-height: 1.5; 
-        letter-spacing: 0.02em; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        
+        color: #434455;
         
 
         }
@@ -519,10 +529,9 @@ Hero styless
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--color1);
-
-
         }
 }
+
 
 
 .name
