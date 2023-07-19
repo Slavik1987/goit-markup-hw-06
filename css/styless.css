@@ -706,6 +706,7 @@ Hero styless
                 flex-wrap: wrap;
                 flex-direction: row;
                 text-align: start;
+                gap: 24px;
                 
          
         }
@@ -716,6 +717,7 @@ Hero styless
         .div-footer {
                 display: flex;
                 flex-wrap: nowrap;
+                gap: 80px;
                 
 
 
