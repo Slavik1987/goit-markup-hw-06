@@ -1884,21 +1884,7 @@ Hero styless
 
 @media screen and (min-width: 1158px) {
         .modal-window-div {
+                width: 428px;
                 
         }
 }
-/* .container-width{
-        width: 428px;
-}
-@media screen and (min-width: 768px) {
-        .container-width {
-                width: 552px;
-        }
-
-}
-
-@media screen and (min-width: 1158px) {
-        .container-width {
-                width: 1440px;
-        }
-} */
